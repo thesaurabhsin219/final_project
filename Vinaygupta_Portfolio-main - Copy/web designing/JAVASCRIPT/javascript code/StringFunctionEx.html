@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <button onclick="f1()">Go</button>
+        <p id="para"></p>
+    </body>
+    <script>
+        function f1(){
+            var x="I Love my INDIA";
+            var data=x.charAt(4);
+            var data=x.concat("rahul");
+            var data=x.indexOf("I");
+            var data=x.lastIndexOf("I");
+            var data=x.search("Love");
+            var data=x.replace("my","our");
+            var data=x.substr(2,4);
+            var data=x.substring(2,8);//start Index Including and end Index Excluding
+            var data=x.toLowerCase();
+            var data=x.toUpperCase();
+            var data=x.trim();
+            var data=x.split("v");
+            var data=x.split("");
+            var data=x.split("").reverse().join(""); //to reverse string
+            var data=x.padEnd(20,"#");
+            var data=x.padStart(20,"#");
+            var y=document.getElementById("para");
+            y.innerHTML=data;
+        }
+    </script> 
+</html>

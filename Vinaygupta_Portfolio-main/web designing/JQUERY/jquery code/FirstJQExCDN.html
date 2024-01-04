@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <button id="b1">Click Me</button>
+        <div id="dd">
+            <h2>Hello INCAPP</h2>
+            <p>Hi India</p>
+        </div>
+    </body>
+    <script>
+       $(document).ready(function(){
+           $("#b1").click(function(){
+               $("#dd").slideToggle(2000);
+           });
+       });
+    </script>
+</html>

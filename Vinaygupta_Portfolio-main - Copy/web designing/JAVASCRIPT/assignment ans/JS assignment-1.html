@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS assignment-1</title>
+    <link rel="icon" href="">
+    <meta name="author" content="Saurabh Singh" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <style>
+        section{
+            height: 100%;
+            width: 50%;
+            border: 5px solid red;
+            background-color: yellow;
+            text-align: center;
+            padding: 40px;
+            margin-top: 15%;
+            margin-left: 20%;
+            font-family: 'Kanit', sans-serif;
+            
+        }
+        section div{
+            display: inline-block;
+            
+            
+        }
+        #h1{
+            display: inline-block;
+            padding-right: 300px;
+        }
+        #div1{
+            padding-right: 300px;
+        }
+        button{
+            background-color: aqua;
+            border: 2px solid red;
+            border-radius: 3px;
+            
+            padding: 7px 15px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 id="h1">This is India</h1>
+        <button onclick="f1()">Change</button>
+        <hr>
+        <div id="div1">
+            <h1 id="h2">This is Kishan</h1>
+            <button onclick="f2()">Change</button>
+        </div>
+        <div id="div2">
+            <h1 id="h3">This is Incapp</h1>
+            <button onclick="f3()">Change</button>
+        </div>
+        <br><br><br><br>
+        <button onclick="f4()">Alert</button>
+    </section>
+</body>
+<script>
+    function f1(){
+        var a=document.getElementById("h1");
+        a.innerHTML="hey there";
+    }
+    function f2(){
+        var b=document.getElementById("h2");
+        b.innerHTML="how are you?";
+    }
+    function f3(){
+        var c=document.getElementById("h3");
+        c.innerHTML="I am fine.";
+    }
+    function f4(){
+        alert("I love my India");
+    }
+
+</script>
+</html>

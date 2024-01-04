@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>assignment-10</title>
+</head>
+<body>
+    <h1>SUM OF DIGITS OF A NUMBER!</h1>
+    <input id="A" type="number" placeholder="enter number" required/>
+    <button onclick="f1()" > FIND</button>
+    <p id="B"></p>
+</body>
+<script>
+    function f1() {
+        var a=document.getElementById("A");
+        var b=document.getElementById("B");
+
+        var n1=parseInt(a.value);
+        var data=0;
+        while (n1>0) {
+            var n2=n1%10;
+            data += n2;
+            n1=parseInt(n1/10);
+            
+        }
+        b.innerHTML="sum: "+data;
+
+    }
+</script>
+</html>

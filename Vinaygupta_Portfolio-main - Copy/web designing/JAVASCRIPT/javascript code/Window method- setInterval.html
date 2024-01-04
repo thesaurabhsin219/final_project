@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Window method setInterval example:</h1>
+        <button onclick="f1()">Click Me</button>
+        <button onclick="f2()">Click Me to close Interval</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        var i;
+        function f1(){
+             i=setInterval( function (){
+                    alert("Kaise Ho?");
+                } , 3000);  
+        }
+        function f2(){
+            clearInterval(i);
+        }
+    </script>
+</html>

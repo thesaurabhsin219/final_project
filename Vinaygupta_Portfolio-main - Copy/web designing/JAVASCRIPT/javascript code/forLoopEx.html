@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Loop EXAMPLE</h1>
+        <input type="number" id="num" placeholder="Enter a number"/>
+        <button onclick="loop()">GO</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        function loop(){
+            var y=document.getElementById("para");
+            var n=document.getElementById("num").value;
+            var c=parseInt(n);
+            var data="";
+            if(c>=1){
+                for(var x=1;x<=c;x++){
+                    data += "Rahul ";
+                    // data += "Rahul<br/>";
+                }
+            }else{
+                data="plz enter valid number!";
+            }
+            y.innerHTML=data;
+        }
+    </script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>assignment-2</title>
+    <link rel="stylesheet" href="">
+    <meta name="author" content="Saurabh Singh"/>
+</head>
+<body>
+    <h1>SIMPLE INTEREST APP</h1>
+    <input id="a" type="number" placeholder="enter principle amount"/>
+    <input id="b" type="number" placeholder="enter the rate"/>
+    <input id="c" type="number" placeholder="enter the time"/>
+    <button onclick="f1()" >FIND SI</button>
+    <P id="ans"></P>
+</body>
+<script>
+    function f1()
+        {
+            var a=document.getElementById("a");
+            var b=document.getElementById("b");
+            var c=document.getElementById("c");
+            var d=document.getElementById("ans");
+            
+            var n1=parseFloat(a.value);
+            var n2=parseFloat(b.value);
+            var n3=parseFloat(c.value);
+            var ans=(n1*n2*n3/100);
+            d.innerHTML="SI: "+ans;
+        }    
+</script>
+
+</html>

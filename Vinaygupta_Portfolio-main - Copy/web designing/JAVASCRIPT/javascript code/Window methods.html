@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Window methods example:</h1>
+        <button onclick="f1()">Click Me</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        function f1(){
+            var x=document.getElementById("para");
+
+            // window.alert("Hello INCAPP");
+            // alert("Hello INCAPP"); //window. is optional
+
+
+            // var r=confirm("Do you wanna do this?"); //window. is optional
+            // if(r==true){
+            //     x.innerHTML="You Pressed OK!";
+            // }else{
+            //     x.innerHTML="You Pressed Cancel!";
+            // }
+
+
+            // var r=prompt("What's your name?"); //window. is optional
+            // x.innerHTML="Your Name: "+r;
+
+
+            // open("https://www.incapp.in"); //window. is optional
+
+
+            // close(); //window. is optional
+            
+            
+            // setTimeout(abc,3000);    
+
+            // Function inside Function call
+            setTimeout(function(){
+                alert("Kaise Ho?");
+            }, 3000);  
+        }
+
+        function abc(){
+            alert("Kaise Ho?");
+        }
+    </script>
+</html>

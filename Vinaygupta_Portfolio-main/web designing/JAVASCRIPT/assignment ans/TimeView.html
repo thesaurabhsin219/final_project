@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time view</title>
+    </head>
+    <body >
+        <h1>Current Time:</h1>
+        <p id='para'></p>
+    </body>
+    <script>
+        var p=document.getElementById("para");
+        clock();
+        setInterval(clock, 1000);
+        function clock(){
+            var d=new Date();
+            var h=d.getHours();
+            var a="AM";
+            if(h>=12){
+                h-=12;
+                a="PM";
+            }
+            var m=d.getMinutes();
+            var s=d.getSeconds();
+            p.innerHTML=h+":"+m+":"+s+" "+a;
+        }
+    </script>
+</html>

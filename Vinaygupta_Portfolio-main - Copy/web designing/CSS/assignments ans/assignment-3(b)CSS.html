@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Assignment-3css(b)</title>
+    <link rel="icon" href="myicon.ico">
+    <meta name="author" content="Saurabh Singh"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0%;
+            background:url(https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGd5bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        section>div{
+            display: inline-block;
+            vertical-align: top;
+            margin: -2px;   
+        }
+        section{
+            padding-left:250px;
+            padding-top: 130px;
+        }
+        #div2{
+            padding-left: 30px;
+            background-color: rgb(52, 52, 83);
+            height: 401px;
+            width: 350px;
+        }
+        #div2>h1{
+            color: white;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        #div2>form{
+            font-size: 17px;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        #div2 input{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            border-bottom: 2px solid grey;
+            width: 300px;
+              
+        }
+        #div2>form>button{
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 13px;
+            padding-right: 13px;
+            color: rgb(252, 244, 244);
+            background-color: rgb(32, 184, 184);
+            border: none;
+            border-radius: 6px;
+            font-size: 11px;
+        }
+        #div2>form>a{
+            border-bottom: none;
+            color: grey;
+            font-size: small;
+        }
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="div">
+            <img src="gym.jpeg" alt="gymguy" height="401px" width="400px" >
+
+        </div>
+        <div id="div2">
+            <h1>Create Account</h1>
+            <form>
+                <input type="name" placeholder="Full Name" pattern="[a-zA-Z]+" maxlength="20" required>
+                <br><br>
+                <input type="email" placeholder="Email Address" required>
+                <br><br>
+                <input type="number" placeholder="Phone Number" required>
+                <br><br>
+                <input type="password" placeholder="Password" maxlength="10" required>
+                <br><br>
+                <input type="password" placeholder="Confirm Password" maxlength="10" required>
+                <br><br>
+                <button>SIGNUP NOW</button>
+                &nbsp;&nbsp;&nbsp;
+                <a href="">I have an account</a>
+            </form>
+
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Ex</title>
+	<style>
+		#xyz{
+			padding: 20px;
+			background-color:tomato;
+			color:white;
+			width:200px;
+			height:200px;
+			position:relative;
+		}
+	</style>
+	<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+	
+</head>
+<body>
+	<h1>My Jquery</h1>
+	<button id='b1'>Animate</button>
+	<div id='xyz'>
+		<p>I am Learning JQUERY</p>
+		<p>Hello INCAPP</p>
+		<p>I Love my INDIA</p>
+	</div>
+</body>
+<script>
+	$(document).ready(function(){
+		$("#b1").click(function(){
+			$("#xyz").animate({
+			'left':'250px',
+			'top':'100px',
+			'font-size':'20px',
+			'height': '300px',
+			'width': '300px',
+			'opacity':'0.5'
+			},2000); 	//allowed
+			
+			// },"fast"); 	//allowed
+			// },"slow"); 		//allowed
+		});
+	});
+</script>
+</html>

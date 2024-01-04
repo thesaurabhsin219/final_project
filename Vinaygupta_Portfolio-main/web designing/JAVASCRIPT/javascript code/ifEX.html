@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>If example</h1>
+        <input type="number" id="num" placeholder="Enter a number"/>
+        <button onclick="f1()">Submit</button>
+        <p id='para'></p>
+    </body>
+    <script>
+        function f1(){
+            var a=document.getElementById("num");
+            var b=document.getElementById("para");
+            var c=parseInt(a.value);
+            if(c>=10 && c<=16){
+                b.innerHTML="You are Teenager!";
+            }
+        }
+    </script>
+</html>

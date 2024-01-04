@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS assignment-3</title>
+    <link rel="stylesheet" href="">
+    <meta name="author" content="Suarabh Singh"/>
+</head>
+<body>
+    <h1>SQUARE APP</h1>
+    <input id="a" type="number" placeholder="enter a number">
+    <button onclick="f1()">FIND SQUARE</button>
+    <p id="ans" ></p>
+</body>
+<script>
+    function f1(){
+        var a=document.getElementById("a");
+        var b=document.getElementById("ans");
+
+        var n1=parseFloat(a.value);
+        var ans=n1*n1;
+        b.innerHTML="SQUARE: "+ans;
+    }
+</script>
+</html>

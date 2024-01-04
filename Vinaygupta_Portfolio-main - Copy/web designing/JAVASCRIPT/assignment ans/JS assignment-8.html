@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>assignment-8</title>
+</head>
+<body>
+    <h1>Sum of digits between two numbers!</h1>
+    <input id="A" type="number" placeholder="enter number" required/>
+    <input id="B" type="number" placeholder="enter number" required/>
+    <button onclick="f1()">find Sum</button>
+    <p id="C"></p>
+</body>
+<script>
+    function f1() {
+        var a=document.getElementById("A");
+        var b=document.getElementById("B");
+        var c=document.getElementById("C");
+
+        var n1=parseInt(a.value);
+        var n2=parseInt(b.value);
+
+        var data=0;
+        if (n1>=1 && n2>=1 && n1<n2) {
+            for(var x=n1+1;x<n2;x++){
+                data += x;
+            }
+            
+        } else {
+            data="plz enter a valid number";
+            
+        }
+        c.innerHTML=data;
+    }
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <p id='para'></p>
+    </body>
+    <script>
+        var data;//undefined
+        var data=15+2;
+        var data=15+2+"hi";
+        var data=15+2+"hi"+5;
+        var data=15+2+"hi"+5+5;
+        var data=15+2+"hi"+(5+5);
+        var data=15+2-"hi"+5+5; //NaN
+        var data=15+2-2+"hi"+5+5;
+        var data=15+2+"hi"+5-5; //NaN
+        var data=15+2+"hi"+5*5;
+        var data=15+2+"hi"+5/5;
+        var data=15+2+"hi"+5%5;
+        var data=15+2+"hi"+5**5;
+        var data=7/0;//Infinity
+        var x=document.getElementById('para');
+        x.innerHTML=data;
+    </script>
+</html>

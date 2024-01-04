@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <button id="b1">fade Out</button>
+        <button id="b2">fade In</button>
+        <button id="b3">fade Out/In</button>
+        <div>
+            <h2>Hello INCAPP</h2>
+            <p>Hi India</p>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#b1").click(function(){
+                $("div").fadeOut(2000);
+            });
+            $("#b2").click(function(){
+                $("div").fadeIn(2000);
+            });
+            $("#b3").click(function(){
+                $("div").fadeToggle(2000);
+            });
+        });
+    </script>
+</html>

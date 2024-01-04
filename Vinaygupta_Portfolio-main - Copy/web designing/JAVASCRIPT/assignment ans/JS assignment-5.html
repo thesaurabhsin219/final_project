@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>assignment-5</title>
+</head>
+<body>
+    <h1>Enter Two Number:</h1>
+    <input id="A" type="number" placeholder="enter number" required/>
+    <input id="B" type="number" placeholder="enter number" required/>
+    <button onclick="f1()">Find Greater</button>
+    <p id="C"></p>
+</body>
+<script>
+    function f1() {
+        var a=document.getElementById("A");
+        var b=document.getElementById("B");
+        var c=document.getElementById("C");
+
+        var n1=parseFloat(a.value);
+        var n2=parseFloat(b.value);
+
+        if (n1>n2) {
+            c.innerHTML=n1+" is greater than "+n2;            
+        } else {
+            c.innerHTML=n2+" is greater than "+n1; 
+            
+        }
+        
+    }
+</script>
+</html>

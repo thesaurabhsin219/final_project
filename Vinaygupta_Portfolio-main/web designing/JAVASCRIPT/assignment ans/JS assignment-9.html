@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>assignment-9</title>
+</head>
+<body>
+    <h1>Find Day!</h1>
+    <input id="A" type="number" placeholder="enter number" required/>
+    <button onclick="f1()" >FIND DAY</button>
+    <p id="B" ></p>
+</body>
+<script>
+    function f1() {
+        var a=document.getElementById("A");
+        var b=document.getElementById("B");
+
+        var n1=parseInt(a.value);
+        switch (n1) {
+            case 1:
+                b.innerHTML="monday";
+                break;
+            case 2:
+                b.innerHTML="tuesday"
+                break; 
+            case 3:
+                b.innerHTML="wednesday";
+                break;
+            case 4:
+                b.innerHTML="thursday" ;
+                break;
+            case 5:
+                b.innerHTML="friday";
+                break;
+            case 6:
+                b.innerHTML="saturday";
+                break;
+            case 7:
+                b.innerHTML="sunday";
+                break;
+            default:
+                b.innerHTML="plz enter the number between 1 to 7";
+                break;
+        }
+        
+    }
+</script>
+</html>

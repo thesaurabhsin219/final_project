@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JQuery Ex</title>
+	<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+</head>
+
+<body>
+	<h1>My Jquery</h1>
+	<button id='b1'>Click me</button>
+	<div>
+		<p>I am Learning JQUERY</p>
+		<p id="pp">Hello INCAPP</p>
+		<p class="abc">I Love my INDIA</p>
+	</div>
+</body>
+<script>
+	$(document).ready(function () {
+		$("#b1").click(function () {
+			// $("h1").text("Rahul Chauhan");
+			// $("p").text("Rahul Chauhan");
+			// $("#pp").text("Rahul Chauhan");
+			$(".abc").text("Rahul Chauhan");
+		});
+	});
+</script>
+
+</html>

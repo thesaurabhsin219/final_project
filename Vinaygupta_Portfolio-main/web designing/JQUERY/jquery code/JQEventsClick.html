@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+        <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+        <style>
+            .demo{
+                background-color: aqua;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to my website</h1>
+        <div class='demo'>
+            <p>Hello world.</p>
+            <h2>hi incapp</h2>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $(".demo").click(function(){
+                $(".demo>h2").hide();
+            });
+            $(".demo>p").dblclick(function(){
+                $(".demo>h2").show();
+            });
+        });
+    </script>
+</html>

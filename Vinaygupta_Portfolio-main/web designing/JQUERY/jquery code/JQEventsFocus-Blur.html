@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+        <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    </head>
+    <body>
+        <h1 id='h1'>Welcome to my website</h1>
+        <form action=''>
+            <label>First Name:</label>
+            <input type='text' name='fname'/>
+            <label>Last Name:</label>
+            <input type='text' name='lname'/>
+            <input type='submit' value='go'/>
+        </form>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css( {"background-color":"yellow"} );
+            });
+            $("input").blur(function(){
+                $(this).css( {"background-color":"green"} );
+            });
+        });
+    </script>
+</html>

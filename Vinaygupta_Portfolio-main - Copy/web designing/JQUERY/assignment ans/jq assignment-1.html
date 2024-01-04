@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>assignment-1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>FIND EVEN/ODD</h1>
+    <input id="a" type="number" placeholder="enter number" required/>
+    <button id="b">FIND</button>
+    <p id="c" ></p>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#b").click(function() {
+            var n=$("#a").val();
+            if (n%2==0) {
+                $("#c").text(n+" is even.");
+                
+            }else{
+                $("#c").text(n+" is odd.");
+                
+            }
+            
+        });
+        
+    });
+
+</script>
+</html>

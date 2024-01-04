@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JQuery Ex</title>
+	<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+</head>
+
+<body>
+	<h1>Find Even ODD</h1>
+	<input type="number" id="num" placeholder="Enter a Number" />
+	<button id='b'>Find Even ODD</button>
+	<p id="para"></p>
+</body>
+<script>
+	$(document).ready(function () {
+		$("#b").click(function () {
+			var a=$("#num").val();
+			if(a%2==0){
+				$("#para").text(a+" is Even");
+			}else{
+				$("#para").text(a+" is ODD");
+			}
+		});
+	});
+</script>
+
+</html>

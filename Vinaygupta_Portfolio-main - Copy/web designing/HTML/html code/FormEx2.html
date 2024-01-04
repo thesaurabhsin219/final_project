@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <h1>Welcome to my Page.</h1>
+        <hr/>
+        <h2>Enter your details:</h2>
+        <form >
+            <label for="search">Enter search data:</label>
+            <input type="search" placeholder="your data" maxlength="100" required />
+            <br/><br/>
+            <label for="file">Upload file:</label>
+            <input type="file" accept=".pdf,.png" />
+            <br/><br/>
+            <label for="address">Enter Address:</label>
+            <textarea rows="3" placeholder="Your Address" maxlength="200"></textarea>
+            <br/><br/>
+            <label for="country">Select Country</label>
+            <select>
+                <option>India</option>
+                <option>Japan</option>
+                <option>England</option>
+                <option>Nepal</option>
+                <option>China</option>
+            </select>
+            <br/><br/>
+            <label for="skill">Select Skills:</label>
+            <input type="checkbox" name="skill" /> <span>Cricket</span>
+            <input type="checkbox" name="skill" checked/> <span>Coding</span>
+            <input type="checkbox" name="skill" /> <span>Singing</span>
+            <input type="checkbox" name="skill" checked/> <span>Dance</span>
+            <br/><br/>
+            <label for="gender">Select Gender:</label>
+            <input type="radio" name="gender" checked /> <span>Male</span>
+            <input type="radio" name="gender" /> <span>Female</span>
+            <input type="radio" name="gender" /> <span>Other</span>
+            <br/><br/>
+            <label for="week">Select week:</label>
+            <input type="week" required />
+            <br/><br/>
+            <label for="month">Select month:</label>
+            <input type="month" required />
+            <br/><br/>
+            <label for="time">Select Time:</label>
+            <input type="time" required />
+            <br/><br/>
+            <label for="date">Select Date:</label>
+            <input type="date" required />
+            <br/><br/>
+            <label for="url">Enter URL:</label>
+            <input type="url"  placeholder="Your web page url" maxlength="100" required />
+            <br/><br/>
+            <label for="color">Select Color:</label>
+            <input type="color" />
+            <br/><br/>
+            <label for="range">Select Range:</label>
+            <input type="range" />
+            <br/><br/>
+            <label for="phone">Enter Phone:</label>
+            <input type="tel" pattern="[0-9]+" placeholder="Your phone" maxlength="10" minlength="10" required />
+            <br/><br/>
+            <label for="password">Enter Password:</label>
+            <input type="password" placeholder="Your password" maxlength="20" required />
+            <br/><br/>
+            <button type="submit">Go</button>
+            <input type="image" src="images/arrow.jpg" height="40px" />
+            <button type="reset">Clear</button>
+        </form>
+    </body>
+</html>

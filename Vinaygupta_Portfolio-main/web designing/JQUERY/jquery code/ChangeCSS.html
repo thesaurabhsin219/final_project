@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery Ex</title>
+	<style>
+		.abc{
+			color:red;
+			font-size: 25px;
+			border: 1px solid green;
+		}
+	</style>
+	<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>	
+</head>
+<body>
+	<h1>My Jquery</h1>
+	<button id='b1'>Click me</button>
+	<div id='xyz'>
+		<p>I am Learning JQUERY</p>
+		<p>Hello INCAPP</p>
+		<p>I Love my INDIA</p>
+	</div>
+</body>
+<script>
+	$(document).ready(function(){
+		$("#b1").click(function(){
+			// $("#xyz").css("color","red");
+			// $("#xyz").css("font-size","25px");
+			// $("#xyz").css("border","1px solid green");
+
+			$("#xyz").css({"color":"red","font-size":"25px","border":"1px solid blue"});
+
+			// $("#xyz").addClass("abc");
+		});
+	});
+</script>
+</html>

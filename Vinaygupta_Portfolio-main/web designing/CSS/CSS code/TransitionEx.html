@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+        <style>
+            img{
+                height: 150px;
+                
+                transition-property: height;
+                transition-duration: 2s;
+                /* transition-delay: 4s; */
+                transition-timing-function: ease;
+                transition-timing-function: linear;
+                transition-timing-function: ease-in;
+                transition-timing-function: ease-out;
+                transition-timing-function: ease-in-out;
+
+                transition: height 2s ease 4s;
+
+                transition: all 2s;
+
+                transition: 2s;
+
+            }
+            img:hover{
+                height: 300px;
+                filter: grayscale(100%);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 >Welcome to My Page</h1>
+        <p>Hello Greater NOIDA.</p>
+        <img src="images/flower.jpg" />
+        <p>Hi India</p>
+    </body>
+</html>

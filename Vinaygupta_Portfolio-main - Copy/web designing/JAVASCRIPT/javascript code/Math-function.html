@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS ex</title>
+    </head>
+    <body>
+        <button onclick="f1()">Go</button>
+        <p id="para"></p>
+    </body>
+    <script>
+        function f1(){
+            var data=Math.max(12,35);
+            var data=Math.max(12,35,90,65);
+            var data=Math.min(12,35);
+            var data=Math.pow(5,3);
+            var data=Math.random();
+            var data=Math.random()*9000+1000;//4-digit random number
+            data=parseInt(data);
+            var data=Math.round(23.75);
+            var data=Math.floor(23.75);
+            var data=Math.ceil(23.15);
+            var data=Math.sqrt(5);
+            var data=Math.PI;
+            var data=Math.SQRT2;
+            var data=Math.SQRT1_2;
+            var y=document.getElementById("para");
+            y.innerHTML=data;
+        }
+    </script>
+</html>

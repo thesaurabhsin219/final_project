@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+    </head>
+    <body>
+        <h1>Welcome to my Page.</h1>
+        <hr/>
+        <h2>Enter your details:</h2>
+        <form>
+            <label for="name">Enter Name:</label>
+            <input type="text" pattern="[a-zA-Z ]+" placeholder="Your name" maxlength="20" required />
+            <br/><br/>
+            <label for="email">Enter Email:</label>
+            <input type="email" placeholder="Your Email" maxlength="30" required />
+            <br/><br/>
+            <label for="age">Enter Age:</label>
+            <input type="number" placeholder="Age" max="120" min="0" required />
+            <br/><br/>
+            <input type="submit" value="Go" />
+            <input type="reset" />
+            <br/>
+            <br/>
+            <button>Go</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>

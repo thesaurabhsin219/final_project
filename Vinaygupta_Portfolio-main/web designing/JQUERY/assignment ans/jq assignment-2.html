@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>assignment-2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>SQUARE APP</h1>
+    <input type="number" id="a" placeholder="enter number"/>
+    <button id="b" >FIND</button>
+    <p id="c" ></p>
+    
+</body>
+<script>
+   $(document).ready(function () {
+    $("#a").click(function() {
+        var n1=$("#a").val();
+        
+        $("#c").text(n1*n1);
+        
+    });
+    
+   });
+</script>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>assignment-6</title>
+</head>
+<body>
+    <h1>ENTER FOUR NUMBER</h1>
+    <input id="A" type="number" placeholder="enter number" required/>
+    <input id="B" type="number" placeholder="enter number" required/>
+    <input id="C" type="number" placeholder="enter number" required/>
+    <input id="D" type="number" placeholder="enter number" required/>
+    <button onclick="f1()">Find Greatest</button>
+    <p id="E" ></p>
+</body>
+<script>
+    function f1() {
+        var a=document.getElementById("A");
+        var b=document.getElementById("B");
+        var c=document.getElementById("C");
+        var d=document.getElementById("D");
+        var e=document.getElementById("E");
+
+        var n1=parseFloat(a.value);
+        var n2=parseFloat(b.value);
+        var n3=parseFloat(c.value);
+        var n4=parseFloat(d.value);
+
+        if (n1>n2 && n2>n3 && n3>n4) {
+            e.innerHTML=n1+" is the greatest";
+            
+        } else {
+            if (n2>n3 && n3>n4) {
+                e.innerHTML=n2+" is the greatest";
+                
+            } else {
+                if (n3>n4) {
+                    e.innerHTML=n3+" is the greatest";
+                    
+                }else{
+                    e.innerHTML=n4+" is the greatest";
+                }
+                
+            }
+            
+        }
+        
+    }
+</script>
+</html>
